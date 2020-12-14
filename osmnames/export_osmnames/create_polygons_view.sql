@@ -24,7 +24,7 @@ SELECT
   bounding_box[4] AS north,
   NULLIF(wikidata, '') AS wikidata,
   NULLIF(wikipedia, '') AS wikipedia,
-  NULL::VARCHAR AS housenumbers
+  get_housenumbers(osm_id) AS housenumbers
 FROM
   osm_polygon,
   get_parent_info(id, '') as parentInfo,

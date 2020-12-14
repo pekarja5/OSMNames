@@ -11,9 +11,13 @@ def prepare_housenumbers():
     set_street_names_by_relation_attributes()
     normalize_street_names()
     set_street_ids_by_street_name()
+    set_place_ids_by_place_name()
     set_street_attributes_by_nearest_street()
     sanitize_housenumbers()
     consistency_check.missing_street_ids()
+
+def set_place_ids_by_place_name():
+    exec_sql_from_file("set_place_ids_by_place_name.sql", cwd=SQL_DIR)
 
 
 def set_street_attributes_by_street_relation_members():
