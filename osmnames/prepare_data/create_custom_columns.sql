@@ -22,3 +22,6 @@ ALTER TABLE osm_housenumber ADD parent_id BIGINT,
                             ADD geometry_center GEOMETRY DEFAULT(ST_Point(0,0)),
                             ADD normalized_place TEXT,
                             ADD normalized_street TEXT;
+
+
+ALTER TABLE osm_point ADD normalized_name TEXT;

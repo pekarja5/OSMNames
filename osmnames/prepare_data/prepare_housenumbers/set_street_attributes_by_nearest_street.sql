@@ -12,7 +12,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql IMMUTABLE;
 
-UPDATE osm_housenumber
-  SET (street_id, street) = (SELECT * FROM nearest_street(parent_id, geometry))
-WHERE street_id IS NULL
-      AND parent_id IS NOT NULL;
+--UPDATE osm_housenumber
+--  SET (street_id, street) = (SELECT * FROM nearest_street(parent_id, geometry))
+--WHERE street_id IS NULL
+--      AND parent_id IS NOT NULL;

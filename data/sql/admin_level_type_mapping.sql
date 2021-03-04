@@ -52,10 +52,10 @@ ck	8	state
 ck	2	country
 ax	8	state
 ax	3	country
-cz	6	state_district
+cz	6	state
 cz	7	state_district
 cz	8	city
-cz	4	state
+cz	4	country_region
 cz	10	suburb
 cz	2	country
 ws	2	country
@@ -584,7 +584,7 @@ sk	6	city
 sk	8	state_district
 sk	9	city
 sk	4	state
-sk	10	city
+sk	10	city_district
 sk	3	country_region
 sk	2	country
 ag	2	country

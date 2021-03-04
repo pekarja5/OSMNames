@@ -53,7 +53,7 @@ def set_parent_ids():
         set_housenumbers_parent_ids
     )
 
-    drop_parent_polygons()
+    #drop_parent_polygons()
     vacuum_database()
 
 

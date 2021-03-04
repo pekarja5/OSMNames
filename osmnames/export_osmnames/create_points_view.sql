@@ -24,7 +24,7 @@ SELECT
   round(ST_YMAX(ST_Transform(geometry, 4326))::numeric, 5) AS north,
   NULLIF(wikidata, '') AS wikidata,
   NULLIF(wikipedia, '') AS wikipedia,
-  NULL::VARCHAR AS housenumbers
+  get_housenumbers(osm_id) AS housenumbers
 FROM
   osm_point,
   get_parent_info(parent_id, name) as parentInfo
